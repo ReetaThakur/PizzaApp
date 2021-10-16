@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddCartActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_1"
+        android:id="@+id/pizzaPic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Size"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaPic"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/selectsize"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="	#008000"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regular -"
+        android:id="@+id/txtSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectsize"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:id="@+id/txtprice"
+        app:layout_constraintStart_toEndOf="@+id/txtSize"
+        app:layout_constraintTop_toBottomOf="@+id/selectsize"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_additem"
+        app:layout_constraintStart_toEndOf="@+id/txtprice"
+        app:layout_constraintTop_toBottomOf="@+id/selectsize"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40sp"
+        android:id="@+id/addItem"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_removeitem"
+        app:layout_constraintStart_toEndOf="@+id/addItem"
+        app:layout_constraintTop_toBottomOf="@+id/selectsize"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40sp"
+        android:id="@+id/removeItem"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium -"
+        android:id="@+id/txtMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSize"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:id="@+id/txtMediumPrice"
+        app:layout_constraintStart_toEndOf="@+id/txtMedium"
+        app:layout_constraintTop_toBottomOf="@+id/txtprice"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_additem"
+        app:layout_constraintStart_toEndOf="@+id/txtMediumPrice"
+        app:layout_constraintTop_toBottomOf="@+id/addItem"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="35sp"
+        android:id="@+id/addItemMedium"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_removeitem"
+        app:layout_constraintStart_toEndOf="@+id/addItemMedium"
+        app:layout_constraintTop_toBottomOf="@+id/removeItem"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40sp"
+        android:id="@+id/removeItemMedium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large -"
+        android:id="@+id/txtLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:id="@+id/txtLargePrice"
+        app:layout_constraintStart_toEndOf="@+id/txtLarge"
+        app:layout_constraintTop_toBottomOf="@+id/txtMediumPrice"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_additem"
+        app:layout_constraintStart_toEndOf="@+id/txtLargePrice"
+        app:layout_constraintTop_toBottomOf="@+id/addItemMedium"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60sp"
+        android:id="@+id/addItemLarge"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_removeitem"
+        app:layout_constraintStart_toEndOf="@+id/addItemLarge"
+        app:layout_constraintTop_toBottomOf="@+id/removeItemMedium"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40sp"
+        android:id="@+id/removeItemLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLarge"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:textSize="30dp"
+        android:id="@+id/totalPrice"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/totalPrice"
+        app:layout_constraintTop_toBottomOf="@+id/txtLarge"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:textSize="30dp"
+        android:id="@+id/txtTotalPrice"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
